@@ -150,7 +150,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/cv.pdf"
+                  href="/CV.pdf"
                   download
                   className="text-slate-400 dark:text-slate-400 hover:text-cyan-400 dark:hover:text-cyan-400 transition-colors"
                 >
