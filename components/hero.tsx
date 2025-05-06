@@ -65,7 +65,7 @@ export default function Hero() {
               variant="outline"
               className="border-cyan-600 text-cyan-400 hover:bg-cyan-950/30 px-6 relative overflow-hidden group"
             >
-              <Link href="/cv.pdf" download>
+              <Link href="/CV.pdf" download>
                 <span className="relative z-10 flex items-center">
                   Download CV <Download className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
                 </span>
