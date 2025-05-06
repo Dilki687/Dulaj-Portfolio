@@ -24,32 +24,37 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Form submission logic would go here
-    console.log("Form submitted:", formData)
-    // Reset form
+  
+    const { name, email, message } = formData
+    const subject = encodeURIComponent(`Message from ${name}`)
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)
+  
+    const mailtoLink = `mailto:dulajbopitiya111@gmail.com?subject=${subject}&body=${body}`
+  
+    window.location.href = mailtoLink
+  
+    // Optionally reset the form
     setFormData({ name: "", email: "", message: "" })
-    // Show success message
-    alert("Thank you for your message! I'll get back to you soon.")
   }
-
+  
   const contactItems = [
     {
       icon: <Mail className="text-cyan-400" />,
       title: "Email",
-      value: "dulaj@example.com",
-      link: "mailto:dulaj@example.com",
+      value: "dulajbopitiya111@gmail.com",
+      link: "mailto:dulajbopitiya111@gmail.com",
     },
     {
       icon: <Github className="text-cyan-400" />,
       title: "GitHub",
-      value: "github.com/dulajbopitiya",
-      link: "https://github.com/dulajbopitiya",
+      value: "github.com/DulajBopitiya",
+      link: "https://github.com/DulajBopitiya",
     },
     {
       icon: <Linkedin className="text-cyan-400" />,
       title: "LinkedIn",
-      value: "linkedin.com/in/dulajbopitiya",
-      link: "https://linkedin.com/in/dulajbopitiya",
+      value: "linkedin.com/in/dulaj-bopitiya",
+      link: "https://www.linkedin.com/in/dulaj-bopitiya/",
     },
     {
       icon: <MapPin className="text-cyan-400" />,

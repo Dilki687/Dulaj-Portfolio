@@ -9,24 +9,24 @@ export default function Testimonials() {
   const testimonials = [
     {
       quote:
-        "Dulaj's expertise in embedded systems is exceptional. His ability to solve complex hardware challenges while maintaining clean, efficient code is impressive.",
-      name: "Dr. Sarah Chen",
-      title: "Professor of Electrical Engineering",
-      initials: "SC",
+        "Dulaj's professionalism and deep understanding in Electronics Engineering truly exceeded my expectations. Not only was the work top-notch, but Dulaj was also incredibly polite and went above and beyond throughout the project. HIGHLY recommend! 👍",
+      name: "kingfisherwebau",
+      title: "Client",
+      initials: "C",
     },
     {
       quote:
-        "Working with Dulaj on our automation project was a great experience. His knowledge of microcontrollers and firmware development helped us deliver a robust solution on time.",
-      name: "Michael Rodriguez",
-      title: "Project Manager",
-      initials: "MR",
+        "Dulaj's expertise in code is unparalleled. His cooperation, politeness, and language fluency made the entire process seamless and enjoyable. Highly recommend working with him! 😊",
+      name: "rosspawnbrokers",
+      title: "Client",
+      initials: "C",
     },
     {
       quote:
-        "Dulaj's attention to detail in PCB design and his innovative approach to problem-solving make him an outstanding engineer to collaborate with.",
-      name: "Priya Sharma",
-      title: "Senior Hardware Engineer",
-      initials: "PS",
+        "Very talented, Knows what he is doing. He was extremely quick in understanding the requirements and delivered in time. Really impressed with the level of understanding and agility to implement. Looking forward to work with him again for future projects.",
+      name: "sujaysshenoy",
+      title: "Client",
+      initials: "C",
     },
   ]
 

@@ -7,7 +7,7 @@ import { PenToolIcon as Tool, Award, Code, Wrench, MicroscopeIcon as Microchip }
 import SkillCategory from "./skill-category"
 
 export default function About() {
-  const tools = ["MPLAB", "PlatformIO", "VS Code", "SquareLine Studio", "Logic Analyzers"]
+  const tools = ["MPLAB", "PlatformIO", "VS Code", "SquareLine Studio", "Fritzing", "Thonny", "NI-Multisim", "Altium", "KiCad", "EasyEda"]
 
   const container = {
     hidden: { opacity: 0 },
@@ -26,9 +26,10 @@ export default function About() {
 
   const technicalSkills = [
     { name: "ESP32", percentage: 95 },
-    { name: "STM32", percentage: 90 },
+    { name: "STM32", percentage: 70 },
     { name: "Arduino", percentage: 98 },
-    { name: "FPGA", percentage: 85 },
+    { name: "PIC", percentage: 70 },
+    { name: "FPGA", percentage: 50 },
   ]
 
   const programmingSkills = [
@@ -36,13 +37,15 @@ export default function About() {
     { name: "LVGL", percentage: 88 },
     { name: "FreeRTOS", percentage: 85 },
     { name: "Python", percentage: 75 },
+    { name: "ML(Basics)", percentage: 40 },
   ]
 
   const designSkills = [
     { name: "KiCad", percentage: 90 },
     { name: "EasyEDA", percentage: 95 },
-    { name: "PCB Design", percentage: 92 },
-    { name: "Circuit Design", percentage: 88 },
+    { name: "ESP-IDF", percentage: 60 },
+    { name: "Quartus Prime", percentage: 47 },
+    { name: "MATLAB", percentage: 48 },
   ]
 
   return (
@@ -131,6 +134,15 @@ export default function About() {
                         className="bg-slate-800/50 dark:bg-slate-700/50 text-cyan-300 border-cyan-800 hover:bg-slate-700 dark:hover:bg-slate-600"
                       >
                         PCB Design
+                      </Badge>
+                    </motion.div>
+
+                    <motion.div variants={item}>
+                      <Badge
+                        variant="outline"
+                        className="bg-slate-800/50 dark:bg-slate-700/50 text-cyan-300 border-cyan-800 hover:bg-slate-700 dark:hover:bg-slate-600"
+                      >
+                        Crash course Electronics and PCB design
                       </Badge>
                     </motion.div>
                   </div>

@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { Github, Linkedin, Mail } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { motion } from "framer-motion"
+import Link from "next/link";
+import { Github, Linkedin, Mail } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-slate-900 dark:bg-slate-900 border-t border-slate-800 dark:border-slate-800 py-8">
@@ -19,42 +19,68 @@ export default function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <Link href="/" className="text-2xl font-bold text-slate-100 dark:text-white mb-4 block">
+            <Link
+              href="/"
+              className="text-2xl font-bold text-slate-100 dark:text-white mb-4 block"
+            >
               <span className="text-cyan-400">D</span>ulaj Bopitiya
             </Link>
             <p className="text-slate-400 dark:text-slate-400 mb-4 max-w-md">
-              Embedded & Firmware Developer specializing in PCB design, IoT systems, and automation solutions.
+              Embedded & Firmware Developer specializing in PCB design, IoT
+              systems, and automation solutions.
             </p>
             <div className="flex space-x-4">
-              <motion.div whileHover={{ y: -3 }} transition={{ type: "spring", stiffness: 300 }}>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="text-slate-400 hover:text-cyan-400 hover:bg-slate-800 dark:hover:bg-slate-800"
+              <motion.div
+                whileHover={{ y: -3 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <a
+                  href="https://github.com/DulajBopitiya"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
                 >
-                  <Github className="h-5 w-5" />
-                  <span className="sr-only">GitHub</span>
-                </Button>
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="text-slate-400 hover:text-cyan-400 hover:bg-slate-800 dark:hover:bg-slate-800"
+                  >
+                    <Github className="h-5 w-5" />
+                  </Button>
+                </a>
               </motion.div>
-              <motion.div whileHover={{ y: -3 }} transition={{ type: "spring", stiffness: 300 }}>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="text-slate-400 hover:text-cyan-400 hover:bg-slate-800 dark:hover:bg-slate-800"
+              <motion.div
+                whileHover={{ y: -3 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <a
+                  href="https://www.linkedin.com/in/dulaj-bopitiya/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
                 >
-                  <Linkedin className="h-5 w-5" />
-                  <span className="sr-only">LinkedIn</span>
-                </Button>
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="text-slate-400 hover:text-cyan-400 hover:bg-slate-800 dark:hover:bg-slate-800"
+                  >
+                    <Linkedin className="h-5 w-5" />
+                  </Button>
+                </a>
               </motion.div>
-              <motion.div whileHover={{ y: -3 }} transition={{ type: "spring", stiffness: 300 }}>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="text-slate-400 hover:text-cyan-400 hover:bg-slate-800 dark:hover:bg-slate-800"
-                >
-                  <Mail className="h-5 w-5" />
-                  <span className="sr-only">Email</span>
-                </Button>
+              <motion.div
+                whileHover={{ y: -3 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <a href="mailto:dulajbopitiya111@gmail.com" aria-label="Email">
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="text-slate-400 hover:text-cyan-400 hover:bg-slate-800 dark:hover:bg-slate-800"
+                  >
+                    <Mail className="h-5 w-5" />
+                  </Button>
+                </a>
               </motion.div>
             </div>
           </motion.div>
@@ -65,7 +91,9 @@ export default function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            <h3 className="text-lg font-semibold text-slate-100 dark:text-white mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold text-slate-100 dark:text-white mb-4">
+              Quick Links
+            </h3>
             <ul className="space-y-2">
               <li>
                 <Link
@@ -116,7 +144,9 @@ export default function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h3 className="text-lg font-semibold text-slate-100 dark:text-white mb-4">Resources</h3>
+            <h3 className="text-lg font-semibold text-slate-100 dark:text-white mb-4">
+              Resources
+            </h3>
             <ul className="space-y-2">
               <li>
                 <Link
@@ -150,5 +180,5 @@ export default function Footer() {
         </motion.div>
       </div>
     </footer>
-  )
+  );
 }

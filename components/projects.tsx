@@ -26,7 +26,7 @@ export default function Projects() {
       id: 1,
       title: "Poultry Farming Automation System",
       description: "A fully integrated automation system for poultry farms with dual ESP32 architecture.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/projects/poultry-automation.png",
       tech: ["ESP32", "LVGL", "UART", "JSON", "OTA", "FreeRTOS"],
       featured: true,
       details:
@@ -36,7 +36,7 @@ export default function Projects() {
       id: 2,
       title: "Micromouse v1",
       description: "First generation maze-solving robot with dual ATmega328 setup.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/projects/micromouse-v1.png",
       tech: ["ATmega328", "IR Sensors", "Motor Drivers", "EasyEDA"],
       featured: true,
       details:
@@ -46,7 +46,7 @@ export default function Projects() {
       id: 3,
       title: "Micromouse v2",
       description: "Advanced maze-solving robot with ESP32-S3 and improved capabilities.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/projects/micromouse-v2.png",
       tech: ["ESP32-S3", "KiCad", "PID Control", "FreeRTOS", "ToF Sensors"],
       featured: true,
       details:
@@ -56,7 +56,7 @@ export default function Projects() {
       id: 4,
       title: "Li-Po Charger with Boost",
       description: "Battery charging module with integrated protection and power management.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/projects/li-po.png",
       tech: ["TP4056", "Battery Protection", "Boost Converter"],
       featured: false,
       details:
@@ -66,7 +66,7 @@ export default function Projects() {
       id: 5,
       title: "IR Tracker / TCRT5000 Sensor Arrays",
       description: "Custom-designed line-tracking sensor modules for robotics.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/projects/TCRT5000-arrays.png",
       tech: ["LM393", "TCRT5000", "IR Sensors"],
       featured: false,
       details:
@@ -76,7 +76,7 @@ export default function Projects() {
       id: 6,
       title: "PICKIT2 Programmer",
       description: "Custom-made universal programmer for Microchip PIC microcontrollers.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/projects/PICKIT2.png",
       tech: ["PIC12F", "ICSP", "MPLAB IDE"],
       featured: false,
       details:
@@ -84,18 +84,18 @@ export default function Projects() {
     },
     {
       id: 7,
-      title: "STM32 Mainboard (WIP)",
-      description: "Custom STM32-based development board (work in progress).",
-      image: "/placeholder.svg?height=400&width=600",
-      tech: ["STM32", "PCB Design"],
+      title: "Esp32 based RC Plane Flight Controller",
+      description: "A custom 4-layer PCB-based flight controller for an RC plane with advanced sensor fusion.",
+      image: "/images/projects/PLANE-CONTROL-BOARD.png",
+      tech: ["ESP32", "PCB Design", "Sensor Fusion", "MPU9250", "Barometer"],
       featured: false,
-      details: "A custom STM32 mainboard currently under development.",
-    },
+      details: "Developed a custom RC plane controller board using a 4-layer PCB, ensuring signal integrity, noise isolation, and power distribution. Integrated dual MPU9250 IMUs and two barometric pressure sensors for precise orientation and altitude estimation. Employed advanced routing practices such as impedance control and optimal decoupling capacitor placement to ensure stable operation in high-vibration environments. Supported real-time telemetry and expandability for GPS and RF modules, showcasing expertise in PCB design, embedded systems, and multi-sensor data fusion for aerial platforms.",
+    },    
     {
       id: 8,
       title: "ESP32 GPS Monitoring System",
       description: "Advanced monitoring system with integrated GPS and sensor modulation.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/projects/GPS-SYSTEM.png",
       tech: ["ESP32", "GPS", "Sensor Modulation"],
       featured: false,
       details: "An advanced monitoring system based on ESP32 with integrated GPS and sensor modulation capabilities.",
@@ -165,7 +165,7 @@ export default function Projects() {
                       src={project.image || "/placeholder.svg"}
                       alt={project.title}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="object-contain transition-transform duration-500 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60"></div>
                   </div>
@@ -235,7 +235,7 @@ export default function Projects() {
                       src={project.image || "/placeholder.svg"}
                       alt={project.title}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="object-contain transition-transform duration-500 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60"></div>
                   </div>
@@ -276,7 +276,7 @@ export default function Projects() {
                   src={selectedProject.image || "/placeholder.svg"}
                   alt={selectedProject.title}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
               )}
             </div>
